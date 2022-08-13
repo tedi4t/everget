@@ -18,4 +18,18 @@ export const themeOptions: ThemeOptions = {
 			'800': '#F4F5F7',
 		},
 	},
+	typography: {
+		fontFamily:
+			'"SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"',
+		button: { fontWeight: 600 },
+		h1: { fontWeight: 600, fontSize: '3.5rem' },
+		h2: { fontWeight: 600, fontSize: '3rem' },
+		h3: { fontWeight: 600, fontSize: '2.25rem' },
+		h4: { fontWeight: 600, fontSize: '2rem' },
+		h5: { fontWeight: 600, fontSize: '1.5rem' },
+		h6: { fontWeight: 600, fontSize: '1.125rem' },
+		subtitle1: { fontSize: '14px' }, // for Data-Grid cells
+		subtitle2: { fontSize: '12px' },
+		overline: { fontWeight: 600 },
+	},
 };
