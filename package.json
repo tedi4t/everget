@@ -10,6 +10,10 @@
     "prettify": "node ./node_modules/.bin/prettier --write ."
   },
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.10.0",
+    "@mui/styled-engine": "^5.10.0",
     "next": "12.2.5",
     "prettier": "^2.7.1",
     "react": "18.2.0",
