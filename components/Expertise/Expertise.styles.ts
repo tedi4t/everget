@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import Typography from '@mui/material/Typography';
 
 export const ExpertiseWrapper = styled.div`
+	background: ${({ theme }) => theme.palette.grey['800']};
 	padding: 4rem 0;
 `;
 

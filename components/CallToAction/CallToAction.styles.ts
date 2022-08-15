@@ -3,9 +3,7 @@ import styled from '@emotion/styled';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 
-export const CallToActionWrapper = styled.div`
-	background: ${({ theme }) => theme.palette.grey['800']};
-`;
+export const CallToActionWrapper = styled.div``;
 
 export const WContainer = styled(Container)`
 	position: relative;
@@ -16,7 +14,7 @@ export const WContainer = styled(Container)`
 export const BackgroundRectangle = styled.div`
 	position: absolute;
 	left: 25%;
-	right: 35%;
+	right: 65%;
 	top: 0;
 	bottom: 0;
 	background: ${({ theme }) => theme.palette.primary.main};
@@ -24,12 +22,13 @@ export const BackgroundRectangle = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-	background: ${({ theme }) => theme.palette.background.default};
+	background: ${({ theme }) => theme.palette.grey['800']};
 	z-index: 1;
 	position: absolute;
 	top: 4rem;
 	left: 15%;
 	right: 25%;
+	border-radius: 1.5rem;
 `;
 
 export const Circle = styled.div`
@@ -51,7 +50,7 @@ export const InfoWrapper = styled.div`
 	bottom: 4rem;
 	border-radius: 1.5rem;
 
-	background: ${({ theme }) => theme.palette.background.default};
+	background: ${({ theme }) => theme.palette.grey['800']};
 	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
 	padding: 2rem;
 

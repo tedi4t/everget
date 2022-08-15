@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import DoneIcon from '@mui/icons-material/Done';
+import Typography from '@mui/material/Typography';
 
 export const AdvantagesWrapper = styled.div`
 	padding: 4rem 0 4rem 0;
@@ -43,4 +44,21 @@ export const WDoneIcon = styled(DoneIcon)`
 `;
 WDoneIcon.defaultProps = {
 	fontSize: 'large',
+};
+
+export const AdvantagesTitle = styled(Typography)``;
+AdvantagesTitle.defaultProps = {
+	variant: 'h3',
+	fontWeight: '500',
+	textAlign: 'center',
+	color: 'primary',
+};
+
+export const AdvantagesSubtitle = styled(Typography)`
+	margin-top: 3rem;
+`;
+AdvantagesSubtitle.defaultProps = {
+	variant: 'h6',
+	textAlign: 'center',
+	fontWeight: 'light',
 };

@@ -7,19 +7,19 @@ import {
 	BoxContainer,
 	DoneIconOutline,
 	WDoneIcon,
+	AdvantagesTitle,
+	AdvantagesSubtitle,
 } from './Advantages.styles';
 
 export function Advantages() {
 	return (
 		<AdvantagesWrapper>
 			<Container>
-				<Typography variant={'h3'} fontWeight={'500'} textAlign={'center'}>
-					We create super-awesome designs
-				</Typography>
-				<Typography variant={'h6'} textAlign={'center'} sx={{ mt: 3 }}>
+				<AdvantagesTitle>We create super-awesome designs</AdvantagesTitle>
+				<AdvantagesSubtitle>
 					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
 					nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-				</Typography>
+				</AdvantagesSubtitle>
 				<BoxesContainer>
 					<Box
 						title={'Amazing Design'}
