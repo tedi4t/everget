@@ -15,7 +15,8 @@ export const themeOptions: ThemeOptions = {
 			'300': '#E0E0E0',
 			'500': '#D0D4DB',
 			'700': '#DFDFDF',
-			'800': '#F4F5F7',
+			'800': '#e9e9e9',
+			'900': '#F4F5F7',
 		},
 	},
 	typography: {

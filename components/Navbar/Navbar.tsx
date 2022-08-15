@@ -14,7 +14,6 @@ import {
 	SlideItemTypography,
 } from './Navbar.styles';
 
-import Logo from '../../assets/media/logo.png';
 import { useState } from 'react';
 
 export function Navbar() {

@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 export const WContainer = styled(Container)`
-	padding-top: 4rem;
+	padding: 4rem 0 4rem 0;
 `;
 
 export const WTypography = styled(Typography)`
