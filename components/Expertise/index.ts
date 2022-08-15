@@ -1,0 +1,1 @@
+export { Expertise } from './Expertise';

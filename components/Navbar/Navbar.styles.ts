@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 const closeWrapperAnimation = keyframes`
 	0%, 99% {
-		z-index: 1;
+		z-index: 10;
 	}
 
 	100% {
@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
 	transition-duration: 0.5s;
 
 	&.open {
-		z-index: 1;
+		z-index: 10;
 		background: rgba(0, 0, 0, 0.1);
 	}
 
@@ -74,7 +74,7 @@ export const WIconButton = styled(IconButton)`
 	flex-direction: column;
 	gap: 0.5rem;
 
-	z-index: 2;
+	z-index: 11;
 
 	&.animate {
 		animation: ${slideToggleAnimation} 1s linear;
