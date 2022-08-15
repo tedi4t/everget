@@ -7,6 +7,8 @@ import Typography from '@mui/material/Typography';
 const closeWrapperAnimation = keyframes`
 	0%, 99% {
 		z-index: 10;
+		bottom: 0;
+		right: 0;
 	}
 
 	100% {
@@ -17,12 +19,13 @@ const closeWrapperAnimation = keyframes`
 export const Wrapper = styled.div`
 	position: fixed;
 	left: 0;
-	right: 0;
 	top: 0;
-	bottom: 0;
 	transition-duration: 0.5s;
+	z-index: 1;
 
 	&.open {
+		bottom: 0;
+		right: 0;
 		z-index: 10;
 		background: rgba(0, 0, 0, 0.1);
 	}
