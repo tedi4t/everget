@@ -29,6 +29,7 @@ export const ImageWrapper = styled.div`
 	left: 15%;
 	right: 25%;
 	border-radius: 1.5rem;
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
 `;
 
 export const Circle = styled.div`
