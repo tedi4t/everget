@@ -23,7 +23,7 @@ export function Header() {
 						</Grid>
 					</Grid>
 					<Grid item md={6}>
-						<Image src={TeamConstruct} />
+						<Image src={TeamConstruct} alt={'everget'} />
 					</Grid>
 				</Grid>
 			</WContainer>

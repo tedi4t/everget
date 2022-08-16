@@ -21,7 +21,7 @@ export function CallToAction() {
 			<WContainer>
 				<BackgroundRectangle />
 				<ImageWrapper>
-					<Image src={Technologies} />
+					<Image src={Technologies} alt={'everget'} />
 					<Circle />
 				</ImageWrapper>
 				<InfoWrapper>
