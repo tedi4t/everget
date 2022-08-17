@@ -23,10 +23,6 @@ export function Navbar() {
 			href: '/',
 		},
 		{
-			name: 'Specialization',
-			href: '/specialization',
-		},
-		{
 			name: 'Contact US',
 			href: '/contact',
 		},

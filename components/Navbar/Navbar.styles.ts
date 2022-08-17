@@ -96,9 +96,14 @@ export const SlideItem = styled.div`
 export const SlideItemTypography = styled(Typography)`
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
+	color: ${({ theme }) => theme.palette.text.secondary};
+	transition-duration: 0.3s;
+
+	&:hover {
+		color: ${({ theme }) => theme.palette.primary.main};
+	}
 `;
 SlideItemTypography.defaultProps = {
 	variant: 'h5',
-	color: 'primary',
 	fontWeight: 500,
 };
