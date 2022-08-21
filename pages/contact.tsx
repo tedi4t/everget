@@ -2,8 +2,13 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import { ContactPage, Navbar } from '../components';
+import { ContactInfo } from '../components/ContactPage/ContactPage';
 
 const Contact: NextPage = () => {
+	const onSubmit = async (contactInfo: ContactInfo) => {
+		fetch('/api/hello');
+	};
+
 	return (
 		<div>
 			<Head>
@@ -14,7 +19,7 @@ const Contact: NextPage = () => {
 
 			<main>
 				<Navbar />
-				<ContactPage />
+				<ContactPage onSubmit={onSubmit} />
 			</main>
 		</div>
 	);

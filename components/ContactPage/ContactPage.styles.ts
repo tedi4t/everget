@@ -3,6 +3,8 @@ import styled from '@emotion/styled';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Button from '@mui/material/Button';
 
 export const RightBg = styled.div`
 	background: ${({ theme }) => theme.palette.grey['800']};
@@ -53,8 +55,25 @@ export const ContactForm = styled.form`
 
 export const ContactFormTextField = styled(TextField)`
 	margin-bottom: 1.5rem;
+
+	&.no-bottom-margin {
+		margin-bottom: 0;
+	}
 `;
 ContactFormTextField.defaultProps = {
 	variant: 'outlined',
+	fullWidth: true,
+};
+
+export const ContactFormControlLabel = styled(FormControlLabel)`
+	color: ${({ theme }) => theme.palette.text.secondary};
+`;
+
+export const ContactFormButton = styled(Button)`
+	margin-top: 1.5rem;
+`;
+ContactFormButton.defaultProps = {
+	variant: 'outlined',
+	size: 'large',
 	fullWidth: true,
 };

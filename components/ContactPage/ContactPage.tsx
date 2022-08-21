@@ -1,8 +1,9 @@
-import Grid from '@mui/material/Grid';
+import { useState } from 'react';
 import Image from 'next/image';
+import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import Checkbox from '@mui/material/Checkbox';
 
 import ContactImg from '../../assets/media/contact.png';
 
@@ -13,9 +14,38 @@ import {
 	RightSideWrapper,
 	ContactForm,
 	ContactFormTextField,
+	ContactFormControlLabel,
+	ContactFormButton,
 } from './ContactPage.styles';
 
-export function ContactPage() {
+export interface ContactInfo {
+	name: string;
+	company: string;
+	email: string;
+	startDate: string;
+	budget: string;
+	description: string;
+}
+
+export function ContactPage({ onSubmit }: { onSubmit: (contactInfo: ContactInfo) => any }) {
+	const [isErrorShown, setIsErrorShown] = useState<boolean>(false);
+	const [contactInfo, setContactInfo] = useState<ContactInfo>({
+		name: '',
+		company: '',
+		email: '',
+		startDate: '',
+		budget: '',
+		description: '',
+	});
+
+	const handleSubmit = () => {
+		if (!contactInfo.name || !contactInfo.email) {
+			setIsErrorShown(true);
+		} else {
+			onSubmit(contactInfo);
+		}
+	};
+
 	return (
 		<Box sx={{ height: '100vh' }}>
 			<RightBg />
@@ -29,19 +59,65 @@ export function ContactPage() {
 							Contact Us
 						</Typography>
 						<ContactForm>
-							<ContactFormTextField label={'Your name'} />
-							<ContactFormTextField label={'Your Company'} />
-							<ContactFormTextField label={'Your email address'} />
-							<ContactFormTextField label={'When do you want to start?'} />
-							<ContactFormTextField label={'What is your budget?'} />
+							<ContactFormTextField
+								required
+								error={isErrorShown && !contactInfo.name}
+								helperText={isErrorShown && !contactInfo.name ? 'This field is mandatory' : null}
+								label={'Your name'}
+								value={contactInfo.name}
+								onChange={({ target: { value } }) => {
+									setIsErrorShown(false);
+									setContactInfo(contactInfo => ({ ...contactInfo, name: value }));
+								}}
+							/>
+							<ContactFormTextField
+								label={'Your Company'}
+								value={contactInfo.company}
+								onChange={({ target: { value } }) =>
+									setContactInfo(contactInfo => ({ ...contactInfo, company: value }))
+								}
+							/>
+							<ContactFormTextField
+								required
+								error={isErrorShown && !contactInfo.email}
+								helperText={isErrorShown && !contactInfo.email ? 'This field is mandatory' : null}
+								label={'Your email address'}
+								value={contactInfo.email}
+								onChange={({ target: { value } }) => {
+									setIsErrorShown(false);
+									setContactInfo(contactInfo => ({ ...contactInfo, email: value }));
+								}}
+							/>
+							<ContactFormTextField
+								label={'When do you want to start?'}
+								value={contactInfo.startDate}
+								onChange={({ target: { value } }) =>
+									setContactInfo(contactInfo => ({ ...contactInfo, startDate: value }))
+								}
+							/>
+							<ContactFormTextField
+								label={'What is your budget?'}
+								value={contactInfo.budget}
+								onChange={({ target: { value } }) =>
+									setContactInfo(contactInfo => ({ ...contactInfo, budget: value }))
+								}
+							/>
 							<ContactFormTextField
 								multiline
 								rows={'5'}
 								label={'Describe your needs, the more we know, the better.'}
+								value={contactInfo.description}
+								onChange={({ target: { value } }) =>
+									setContactInfo(contactInfo => ({ ...contactInfo, description: value }))
+								}
+								className={'no-bottom-margin'}
 							/>
-							<Button variant={'outlined'} size={'large'} fullWidth>
-								Submit
-							</Button>
+							<ContactFormControlLabel
+								defaultChecked
+								control={<Checkbox defaultChecked />}
+								label='I want to receive a confirmation letter'
+							/>
+							<ContactFormButton onClick={handleSubmit}>Submit</ContactFormButton>
 						</ContactForm>
 					</RightSideWrapper>
 				</Grid>
