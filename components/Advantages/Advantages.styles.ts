@@ -8,7 +8,7 @@ export const AdvantagesWrapper = styled.div`
 `;
 
 export const BoxesContainer = styled.div`
-	margin-top: 2rem;
+	margin-top: 3rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 1rem;
@@ -55,10 +55,10 @@ AdvantagesTitle.defaultProps = {
 };
 
 export const AdvantagesSubtitle = styled(Typography)`
-	margin-top: 3rem;
+	margin-top: 1.5rem;
 `;
 AdvantagesSubtitle.defaultProps = {
 	variant: 'h6',
 	textAlign: 'center',
-	fontWeight: 'light',
+	fontWeight: 'normal',
 };
