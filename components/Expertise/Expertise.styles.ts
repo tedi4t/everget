@@ -15,6 +15,10 @@ SkillsTypography.defaultProps = {
 
 export const ExpertiseTypography = styled(Typography)`
 	margin-top: 2rem;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.md}px) {
+		margin-top: 1rem;
+	}
 `;
 ExpertiseTypography.defaultProps = {
 	variant: 'h4',
@@ -23,10 +27,15 @@ ExpertiseTypography.defaultProps = {
 
 export const DescTypography = styled(Typography)`
 	margin-top: 1rem;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.md}px) {
+		margin-bottom: 2rem;
+	}
 `;
 
 export const SkillsList = styled.ul`
 	list-style-type: '-   ';
+	margin: 0;
 `;
 
 export const Skill = styled.li`

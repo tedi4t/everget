@@ -39,7 +39,7 @@ export function Expertise() {
 		<ExpertiseWrapper>
 			<Container>
 				<Grid container>
-					<Grid item md={4}>
+					<Grid item md={4} sm={12} xs={12}>
 						<SkillsTypography>OUR SKILLS</SkillsTypography>
 						<ExpertiseTypography>Expertise</ExpertiseTypography>
 						<DescTypography>
@@ -49,7 +49,7 @@ export function Expertise() {
 					</Grid>
 					{skills.map(skillColumn => {
 						return (
-							<Grid item md={4} key={JSON.stringify(skillColumn)}>
+							<Grid item md={4} sm={6} xs={12} key={JSON.stringify(skillColumn)}>
 								<SkillsList>
 									{skillColumn.map(skill => {
 										return (

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import TeamConstruct from '../../assets/media/teamConstruct.png';
 import Logo from '../../assets/media/logo.png';
-import { WContainer, WTypography, WButton, ImageWrapper } from './Header.styles';
+import { WContainer, WTypography, WButton, LogoWrapper, ImageWrapper } from './Header.styles';
 
 export function Header() {
 	return (
@@ -12,9 +12,9 @@ export function Header() {
 			<WContainer>
 				<Grid container spacing={1}>
 					<Grid item md={6} container flexDirection={'column'} justifyContent={'space-between'}>
-						<ImageWrapper>
+						<LogoWrapper>
 							<Image src={Logo} alt={'everget'} />
-						</ImageWrapper>
+						</LogoWrapper>
 						<Grid container flexDirection={'column'}>
 							<WTypography>we make technology work for you</WTypography>
 							<Link href={'/contact'}>
@@ -23,7 +23,9 @@ export function Header() {
 						</Grid>
 					</Grid>
 					<Grid item md={6}>
-						<Image src={TeamConstruct} alt={'everget'} />
+						<ImageWrapper>
+							<Image src={TeamConstruct} alt={'everget'} />
+						</ImageWrapper>
 					</Grid>
 				</Grid>
 			</WContainer>

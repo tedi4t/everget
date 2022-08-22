@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
 	left: 0;
 	top: 0;
 	transition-duration: 0.5s;
-	z-index: 1;
+	z-index: 2;
 
 	&.open {
 		bottom: 0;
@@ -55,6 +55,10 @@ export const Slide = styled.div`
 export const MenuTypography = styled(Typography)`
 	writing-mode: vertical-lr;
 	text-orientation: upright;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.lg}px) {
+		display: none;
+	}
 `;
 MenuTypography.defaultProps = {};
 

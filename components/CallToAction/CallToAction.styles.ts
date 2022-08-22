@@ -9,6 +9,14 @@ export const WContainer = styled(Container)`
 	position: relative;
 	padding: 4rem 0 4rem 0;
 	height: 53rem;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.lg}px) {
+		height: auto;
+	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.lg}px) {
+		padding: 4rem 2rem;
+	}
 `;
 
 export const BackgroundRectangle = styled.div`
@@ -19,6 +27,11 @@ export const BackgroundRectangle = styled.div`
 	bottom: 0;
 	background: ${({ theme }) => theme.palette.primary.main};
 	z-index: 0;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.lg}px) {
+		left: 8%;
+		right: 82%;
+	}
 `;
 
 export const ImageWrapper = styled.div`
@@ -26,10 +39,19 @@ export const ImageWrapper = styled.div`
 	z-index: 1;
 	position: absolute;
 	top: 4rem;
-	left: 15%;
+	left: 10rem;
 	right: 25%;
 	border-radius: 1.5rem;
 	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.lg}px) {
+		position: relative;
+		width: 85%;
+		right: auto;
+		left: auto;
+		top: auto;
+		bottom: auto;
+	}
 `;
 
 export const Circle = styled.div`
@@ -41,6 +63,10 @@ export const Circle = styled.div`
 	top: 0;
 	left: 0;
 	transform: translateX(-60%) translateY(-10%);
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.lg}px) {
+		display: none;
+	}
 `;
 
 export const InfoWrapper = styled.div`
@@ -57,6 +83,17 @@ export const InfoWrapper = styled.div`
 
 	.body {
 		margin-top: 1.5rem;
+	}
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.lg}px) {
+		position: relative;
+		right: auto;
+		left: auto;
+		top: auto;
+		bottom: auto;
+		width: 80%;
+		margin-left: auto;
+		margin-top: -2rem;
 	}
 `;
 

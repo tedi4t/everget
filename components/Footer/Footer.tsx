@@ -10,7 +10,7 @@ export function Footer() {
 	return (
 		<FooterWrapper>
 			<Container>
-				<Grid container justifyContent={'space-between'}>
+				<Grid container justifyContent={'space-between'} gap={3}>
 					<Typography color={'primary'} variant={'h4'}>
 						Let&apos;s talk about your project
 					</Typography>

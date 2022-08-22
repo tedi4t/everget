@@ -13,6 +13,11 @@ export const BoxesContainer = styled.div`
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 1rem;
 	grid-row-gap: 1rem;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.md}px) {
+		margin-top: 1.5rem;
+		grid-template-columns: 1fr;
+	}
 `;
 
 export const BoxContainer = styled.div`
@@ -46,7 +51,11 @@ WDoneIcon.defaultProps = {
 	fontSize: 'large',
 };
 
-export const AdvantagesTitle = styled(Typography)``;
+export const AdvantagesTitle = styled(Typography)`
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.md}px) {
+		padding: 0 2rem;
+	}
+`;
 AdvantagesTitle.defaultProps = {
 	variant: 'h3',
 	fontWeight: '500',
@@ -56,6 +65,10 @@ AdvantagesTitle.defaultProps = {
 
 export const AdvantagesSubtitle = styled(Typography)`
 	margin-top: 1.5rem;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.md}px) {
+		padding: 0 1rem;
+	}
 `;
 AdvantagesSubtitle.defaultProps = {
 	variant: 'h6',

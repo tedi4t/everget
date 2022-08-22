@@ -11,6 +11,10 @@ export const RightBg = styled.div`
 	top: 0;
 	right: 0;
 	bottom: 0;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.md}px) {
+		display: none;
+	}
 `;
 
 export const ImgWrapper = styled(Grid)`
@@ -36,6 +40,10 @@ WContainer.defaultProps = {
 
 export const RightSideWrapper = styled(Grid)`
 	padding: 3rem;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.lg}px) {
+		padding-top: 1rem;
+	}
 `;
 RightSideWrapper.defaultProps = {
 	item: true,
@@ -49,6 +57,10 @@ RightSideWrapper.defaultProps = {
 export const ContactForm = styled.form`
 	margin-top: 4rem;
 	width: 100%;
+
+	@media (max-width: ${({ theme }) => theme.breakpoints.values.lg}px) {
+		margin-top: 2rem;
+	}
 `;
 
 export const ContactFormTextField = styled(TextField)`
