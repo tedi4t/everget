@@ -112,11 +112,11 @@ export function ContactPage({ onSubmit }: { onSubmit: (contactInfo: ContactInfo)
 								}
 								className={'no-bottom-margin'}
 							/>
-							<ContactFormControlLabel
-								defaultChecked
-								control={<Checkbox defaultChecked />}
-								label='I want to receive a confirmation letter'
-							/>
+							{/*<ContactFormControlLabel*/}
+							{/*	defaultChecked*/}
+							{/*	control={<Checkbox defaultChecked />}*/}
+							{/*	label='I want to receive a confirmation letter'*/}
+							{/*/>*/}
 							<ContactFormButton onClick={handleSubmit}>Submit</ContactFormButton>
 						</ContactForm>
 					</RightSideWrapper>

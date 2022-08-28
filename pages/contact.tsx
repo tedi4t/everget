@@ -6,7 +6,10 @@ import { ContactInfo } from '../components/ContactPage/ContactPage';
 
 const Contact: NextPage = () => {
 	const onSubmit = async (contactInfo: ContactInfo) => {
-		fetch('/api/hello');
+		return fetch('/api/mails/send', {
+			body: JSON.stringify(contactInfo),
+			method: 'POST',
+		});
 	};
 
 	return (
