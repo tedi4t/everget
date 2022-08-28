@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Checkbox from '@mui/material/Checkbox';
+// import Checkbox from '@mui/material/Checkbox';
 
 import ContactImg from '../../assets/media/contact.png';
 
@@ -14,7 +14,7 @@ import {
 	RightSideWrapper,
 	ContactForm,
 	ContactFormTextField,
-	ContactFormControlLabel,
+	// ContactFormControlLabel,
 	ContactFormButton,
 } from './ContactPage.styles';
 
