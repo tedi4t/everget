@@ -5,9 +5,6 @@ const nextConfig = {
 		deviceSizes: [128, 150, 165, 216, 240, 384, 400, 768],
 		imageSizes: [4, 8, 12, 16, 24, 32, 64, 96],
 	},
-	experimental: {
-		nextScriptWorkers: true,
-	},
 };
 
 module.exports = nextConfig;

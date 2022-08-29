@@ -26,16 +26,13 @@ class MyDocument extends Document {
 					<NextScript />
 
 					<Script
-						id={'GA-source'}
 						async
-						defer
+						id={'GA-source'}
 						src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
 						strategy='lazyOnload'
 					/>
 					<Script
 						id={'GA-tracker'}
-						async
-						defer
 						dangerouslySetInnerHTML={{
 							__html: `
 								window.dataLayer = window.dataLayer || [];
