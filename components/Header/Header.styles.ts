@@ -46,6 +46,10 @@ export const LogoWrapper = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
+	display: block;
+	min-height: 25rem;
+	width: 100%;
+
 	@media (max-width: ${({ theme }) => theme.breakpoints.values.md}px) {
 		padding: 3.5rem;
 	}
