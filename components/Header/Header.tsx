@@ -24,7 +24,7 @@ export function Header() {
 					</Grid>
 					<Grid item md={6}>
 						<ImageWrapper>
-							<Image src={Team} alt='everget' width={200} priority />
+							<Image src={Team} alt='everget' priority />
 						</ImageWrapper>
 					</Grid>
 				</Grid>
