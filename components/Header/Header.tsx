@@ -22,9 +22,9 @@ export function Header() {
 							</Link>
 						</Grid>
 					</Grid>
-					<Grid item container md={6}>
+					<Grid item md={6}>
 						<ImageWrapper>
-							<Image src={Team} alt='everget' layout='responsive' priority />
+							<Image src={Team} alt='everget' priority />
 						</ImageWrapper>
 					</Grid>
 				</Grid>
