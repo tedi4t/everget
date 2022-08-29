@@ -52,7 +52,7 @@ export function ContactPage({ onSubmit }: { onSubmit: (contactInfo: ContactInfo)
 			<WContainer>
 				<Grid container sx={{ height: '100vh' }}>
 					<ImgWrapper>
-						<Image src={ContactImg} alt={'everget'} />
+						<Image src={ContactImg} alt='everget' layout='responsive' />
 					</ImgWrapper>
 					<RightSideWrapper>
 						<Typography variant={'h3'} color={'primary'}>
