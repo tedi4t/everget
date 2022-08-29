@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Grid from '@mui/material/Grid';
 import Link from 'next/link';
 
-import Team from '../../assets/media/team.png';
+import TeamConstruct from '../../assets/media/teamConstruct.png';
 import Logo from '../../assets/media/logo.png';
 import { WContainer, WTypography, WButton, LogoWrapper, ImageWrapper } from './Header.styles';
 
