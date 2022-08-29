@@ -27,10 +27,12 @@ class MyDocument extends Document {
 
 					<Script
 						async
+						id={'GA-source'}
 						src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
 						strategy='lazyOnload'
 					/>
 					<Script
+						id={'GA-tracker'}
 						dangerouslySetInnerHTML={{
 							__html: `
 					  window.dataLayer = window.dataLayer || [];
