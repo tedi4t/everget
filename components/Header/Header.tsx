@@ -12,9 +12,7 @@ export function Header() {
 			<WContainer>
 				<Grid container spacing={1}>
 					<Grid item md={6} container flexDirection={'column'} justifyContent={'space-between'}>
-						<LogoWrapper>
-							<Image src={Logo} alt='everget' layout='responsive' />
-						</LogoWrapper>
+						<LogoWrapper>{/*<Image src={Logo} alt='everget' layout='responsive' />*/}</LogoWrapper>
 						<Grid container flexDirection={'column'}>
 							<WTypography>we make technology work for you</WTypography>
 							<Link href={'/contact'}>
@@ -24,7 +22,7 @@ export function Header() {
 					</Grid>
 					<Grid item md={6}>
 						<ImageWrapper>
-							<Image src={Team} alt='everget' layout='responsive' />
+							{/*<Image src={Team} alt='everget' layout='responsive' />*/}
 						</ImageWrapper>
 					</Grid>
 				</Grid>
