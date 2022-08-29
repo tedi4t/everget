@@ -13,7 +13,7 @@ export function Header() {
 				<Grid container spacing={1}>
 					<Grid item md={6} container flexDirection={'column'} justifyContent={'space-between'}>
 						<LogoWrapper>
-							<Image src={Logo} alt='everget' />
+							<Image src={Logo} alt='everget' priority />
 						</LogoWrapper>
 						<Grid container flexDirection={'column'}>
 							<WTypography>we make technology work for you</WTypography>
