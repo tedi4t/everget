@@ -19,6 +19,10 @@ class MyDocument extends Document {
 					<link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
 					<link rel='icon' type='image/vnd.microsoft.icon' sizes='16x16 32x32' href='favicon.ico' />
 					<link rel='manifest' href='/site.webmanifest' />
+				</Head>
+				<body>
+					<Main />
+					<NextScript />
 
 					<script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
 					<script
@@ -33,10 +37,6 @@ class MyDocument extends Document {
           `,
 						}}
 					/>
-				</Head>
-				<body>
-					<Main />
-					<NextScript />
 				</body>
 			</Html>
 		);
