@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Grid from '@mui/material/Grid';
 import Link from 'next/link';
 
-import TeamConstruct from '../../assets/media/teamConstruct.png';
+import Team from '../../assets/media/teamConstruct.png';
 import Logo from '../../assets/media/logo.png';
 import { WContainer, WTypography, WButton, LogoWrapper, ImageWrapper } from './Header.styles';
 
@@ -12,7 +12,9 @@ export function Header() {
 			<WContainer>
 				<Grid container spacing={1}>
 					<Grid item md={6} container flexDirection={'column'} justifyContent={'space-between'}>
-						<LogoWrapper>{/*<Image src={Logo} alt='everget' layout='responsive' />*/}</LogoWrapper>
+						<LogoWrapper>
+							<Image src={Logo} alt='everget' />
+						</LogoWrapper>
 						<Grid container flexDirection={'column'}>
 							<WTypography>we make technology work for you</WTypography>
 							<Link href={'/contact'}>
@@ -22,7 +24,7 @@ export function Header() {
 					</Grid>
 					<Grid item md={6}>
 						<ImageWrapper>
-							{/*<Image src={Team} alt='everget' layout='responsive' />*/}
+							<Image src={Team} alt='everget' />
 						</ImageWrapper>
 					</Grid>
 				</Grid>
