@@ -1,5 +1,6 @@
 import React from 'react';
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
+import Script from 'next/script';
 
 const GA_TRACKING_ID = process.env.GA_TRACKING_ID;
 
@@ -24,19 +25,23 @@ class MyDocument extends Document {
 					<Main />
 					<NextScript />
 
-					{/*<script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />*/}
-					{/*<script*/}
-					{/*	dangerouslySetInnerHTML={{*/}
-					{/*		__html: `*/}
-					{/*  window.dataLayer = window.dataLayer || [];*/}
-					{/*  function gtag(){dataLayer.push(arguments);}*/}
-					{/*  gtag('js', new Date());*/}
-					{/*  gtag('config', '${GA_TRACKING_ID}', {*/}
-					{/*    page_path: window.location.pathname,*/}
-					{/*  });*/}
-					{/*`,*/}
-					{/*	}}*/}
-					{/*/>*/}
+					<Script
+						async
+						src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+						strategy='lazyOnload'
+					/>
+					<Script
+						dangerouslySetInnerHTML={{
+							__html: `
+					  window.dataLayer = window.dataLayer || [];
+					  function gtag(){dataLayer.push(arguments);}
+					  gtag('js', new Date());
+					  gtag('config', '${GA_TRACKING_ID}', {
+					    page_path: window.location.pathname,
+					  });
+					`,
+						}}
+					/>
 				</body>
 			</Html>
 		);
