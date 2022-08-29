@@ -29,7 +29,7 @@ class MyDocument extends Document {
 						async
 						id={'GA-source'}
 						src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-						strategy='afterInteractive'
+						strategy='lazyOnload'
 					/>
 					<Script
 						id={'GA-tracker'}
@@ -43,7 +43,7 @@ class MyDocument extends Document {
 								});
 							`,
 						}}
-						strategy='afterInteractive'
+						strategy='lazyOnload'
 					/>
 				</body>
 			</Html>
