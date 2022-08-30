@@ -26,12 +26,12 @@ export function CallToAction() {
 				</ImageWrapper>
 				<InfoWrapper>
 					<Typography color={'primary'} variant={'h4'}>
-						Create Amazing Website
+						Outsource Web Development
 					</Typography>
 					<Typography className={'body'}>
-						Quis viverra nibh cras pulvinar mattis nunc sed. Lacus sed turpis tincidunt id aliquet
-						risus feugiat in. Auctor augue mauris augue neque gravida in fermentum et. Feugiat in
-						fermentum urna.
+						Hardly any business can do without a website. If you need the one too, Everget is the
+						right partner for you. Instead of spending time on recruiting, extending office and
+						buying extra devices, you can just get your software done hassle-free.
 					</Typography>
 					<InfoButtonWrapper>
 						<Link href={'/contact'}>

@@ -14,16 +14,14 @@ export function Footer() {
 					<Typography color={'primary'} variant={'h4'}>
 						Let&apos;s talk about your project
 					</Typography>
-					<HireUsWrapper>
-						<Link href={'/contact'}>
-							<>
-								<Typography color={'primary'} variant={'h4'}>
-									Hire us
-								</Typography>
-								<WArrowForwardIcon />
-							</>
-						</Link>
-					</HireUsWrapper>
+					<Link href={'/contact'}>
+						<HireUsWrapper>
+							<Typography color={'primary'} variant={'h4'}>
+								Hire us
+							</Typography>
+							<WArrowForwardIcon />
+						</HireUsWrapper>
+					</Link>
 				</Grid>
 			</Container>
 		</FooterWrapper>

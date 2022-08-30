@@ -64,7 +64,7 @@ AdvantagesTitle.defaultProps = {
 };
 
 export const AdvantagesSubtitle = styled(Typography)`
-	margin-top: 1.5rem;
+	margin-top: 1rem;
 
 	@media (max-width: ${({ theme }) => theme.breakpoints.values.md}px) {
 		padding: 0 1rem;

@@ -72,7 +72,7 @@ export const Circle = styled.div`
 export const InfoWrapper = styled.div`
 	position: absolute;
 	right: 0;
-	left: 60%;
+	left: 55%;
 	z-index: 2;
 	bottom: 4rem;
 	border-radius: 1.5rem;

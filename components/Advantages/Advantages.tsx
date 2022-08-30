@@ -15,35 +15,30 @@ export function Advantages() {
 	return (
 		<AdvantagesWrapper>
 			<Container>
-				<AdvantagesTitle>We create super-awesome designs</AdvantagesTitle>
-				<AdvantagesSubtitle>
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-					nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-				</AdvantagesSubtitle>
+				<AdvantagesTitle>Web Application Development Company</AdvantagesTitle>
+				<AdvantagesSubtitle>Best Tech Solutions for Your Business</AdvantagesSubtitle>
 				<BoxesContainer>
 					<Box
-						title={'Amazing Design'}
+						title={'Design'}
 						description={
-							'Sample text. Click to select the text box. Click again or double click to start editing the text.'
-						}
-					/>
-					<Box
-						title={'Copywriting'}
-						description={
-							'Sample text. Click to select the text box. Click again or double click to start editing the text.'
+							'Get an eye-catching look and feel for your business’ online presence, increase your user interaction and drive sales'
 						}
 					/>
 					<Box
 						title={'Development'}
 						description={
-							'Sample text. Click to select the text box. Click again or double click to start editing the text.'
+							'Delivering user-friendly, visually appealing and able to convert visitors into new business'
+						}
+					/>
+					<Box
+						title={'QA & Testing'}
+						description={
+							'Take full advantage of your software with high-quality testing that will save your costs yet improve efficiency'
 						}
 					/>
 					<Box
 						title={'24/7 Support'}
-						description={
-							'Sample text. Click to select the text box. Click again or double click to start editing the text.'
-						}
+						description={'We are always ready to help you in your project development'}
 					/>
 				</BoxesContainer>
 			</Container>

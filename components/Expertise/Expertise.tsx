@@ -5,7 +5,7 @@ import {
 	ExpertiseWrapper,
 	SkillsList,
 	Skill,
-	ExpertiseTypography,
+	// ExpertiseTypography,
 	DescTypography,
 	SkillsTypography,
 } from './Expertise.styles';
@@ -14,24 +14,26 @@ import Typography from '@mui/material/Typography';
 export function Expertise() {
 	const skills = [
 		[
-			'Website "turnkey"',
+			'Software Outsourcing',
+			'Website turnkey',
 			'Project management',
 			'Web hosting',
 			'Content management system',
-			'Complex web systems that include back-end',
-			'HTML, CSS',
-			'React',
-			'Next.JS',
+			'Complex web systems',
+			'Quality Assurance',
+			'UI/UX Design',
+			'Website Re-engineering',
 		],
 		[
-			'JavaScript',
-			'Typescript',
+			'React, Next.JS',
+			'JavaScript, Typescript',
 			'Node.JS',
 			'Amazon Web Services',
 			'Nest.JS',
 			'Express',
 			'MySQL',
 			'PostgreSQL',
+			'DevOps',
 		],
 	];
 
@@ -41,10 +43,11 @@ export function Expertise() {
 				<Grid container>
 					<Grid item md={4} sm={12} xs={12}>
 						<SkillsTypography>OUR SKILLS</SkillsTypography>
-						<ExpertiseTypography>Expertise</ExpertiseTypography>
+						{/*<ExpertiseTypography>Expertise</ExpertiseTypography>*/}
 						<DescTypography>
-							Two decades of hands-on experience and hundreds of millions in spend have yielded a
-							diverse skillset that touches on most every function. This is a partial list.
+							We provide trustworthy software development services and become your partner who knows
+							how to optimize your business processes, improve the customer experience of your
+							business, and create new opportunities through software solutions
 						</DescTypography>
 					</Grid>
 					{skills.map(skillColumn => {
