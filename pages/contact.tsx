@@ -30,8 +30,11 @@ const Contact: NextPage = () => {
 	return (
 		<div>
 			<Head>
-				<title>Everget</title>
-				<meta name='description' content='Everget Desc' />
+				<title>Everget Contact</title>
+				<meta
+					name='description'
+					content='We provide trustworthy software development services and become your partner who knows how to optimize your business processes, improve the customer experience of your business, and create new opportunities through software solutions'
+				/>
 			</Head>
 
 			<main>

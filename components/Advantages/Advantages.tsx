@@ -27,7 +27,7 @@ export function Advantages() {
 					<Box
 						title={'Development'}
 						description={
-							'Delivering user-friendly, visually appealing and able to convert visitors into new business'
+							'Delivering user-friendly, visually appealing and able to convert visitors into new business solutions'
 						}
 					/>
 					<Box
