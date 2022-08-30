@@ -21,7 +21,7 @@ export function Advantages() {
 					<Box
 						title={'Design'}
 						description={
-							'Get an eye-catching look and feel for your business’ online presence, increase your user interaction and drive sales'
+							"Get an eye-catching look and feel for your business's online presence, increase your user interaction and drive sales"
 						}
 					/>
 					<Box

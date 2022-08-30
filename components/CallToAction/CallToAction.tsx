@@ -29,9 +29,9 @@ export function CallToAction() {
 						Outsource Web Development
 					</Typography>
 					<Typography className={'body'}>
-						Hardly any business can do without a website. If you need the one too, Everget is the
-						right partner for you. Instead of spending time on recruiting, extending office and
-						buying extra devices, you can just get your software done hassle-free.
+						Hardly any business can do without a website. If you need one too, Everget is the right
+						partner for you. Instead of spending time on recruiting, extending the office and buying
+						extra devices, you can just get your software done hassle-free.
 					</Typography>
 					<InfoButtonWrapper>
 						<Link href={'/contact'}>
