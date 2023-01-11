@@ -89,3 +89,13 @@ ContactFormButton.defaultProps = {
 	size: 'large',
 	fullWidth: true,
 };
+
+export const SocialMedia = styled(Grid)`
+	width: 100%;
+
+	margin-top: 2rem;
+`;
+SocialMedia.defaultProps = {
+	container: true,
+	flexDirection: 'column',
+};

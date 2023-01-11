@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 // import Checkbox from '@mui/material/Checkbox';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 
 import ContactImg from '../../assets/media/contact.png';
 
@@ -16,6 +19,7 @@ import {
 	ContactFormTextField,
 	// ContactFormControlLabel,
 	ContactFormButton,
+	SocialMedia,
 } from './ContactPage.styles';
 
 export interface ContactInfo {
@@ -119,6 +123,28 @@ export function ContactPage({ onSubmit }: { onSubmit: (contactInfo: ContactInfo)
 							{/*/>*/}
 							<ContactFormButton onClick={handleSubmit}>Submit</ContactFormButton>
 						</ContactForm>
+						<SocialMedia alignItems={'center'} justifyContent={'center'} gap={1}>
+							<Grid container alignItems={'center'} justifyContent={'center'} gap={1}>
+								<EmailIcon color={'primary'} />
+								<Typography color={'primary'} variant={'body1'}>
+									everget@everget.co
+								</Typography>
+							</Grid>
+							<Link
+								href={'https://www.linkedin.com/company/everget-development/'}
+								passHref
+								legacyBehavior
+							>
+								<a>
+									<Grid container alignItems={'center'} justifyContent={'center'} gap={1}>
+										<LinkedInIcon color={'primary'} />
+										<Typography color={'primary'} variant={'body1'}>
+											LinkedIn
+										</Typography>
+									</Grid>
+								</a>
+							</Link>
+						</SocialMedia>
 					</RightSideWrapper>
 				</Grid>
 			</WContainer>
