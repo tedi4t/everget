@@ -22,7 +22,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Data>)
 	`;
 
 	const mail = {
-		to: 'everget@everget.co', // Change to your recipient
+		to: 'dmytro@everget.co', // Change to your recipient
 		from: 'no-reply@everget.co', // Change to your verified sender
 		subject: 'SUBMITTED CONTACT FORM',
 		text: text,
